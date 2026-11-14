@@ -1,6 +1,6 @@
-# Diseño — Post-its con símbolos (proyecto_v3)
+# Diseño Post-its con símbolos (proyecto_v3)
 
-Fecha: 2026-11-08 · Estado: **borrador para revisión**
+Fecha: 2026-11-08
 
 ## 1. Objetivo
 
@@ -8,23 +8,18 @@ Extender `proyecto_v2.py` para que, además de detectar post-its amarillos como
 plataformas, reconozca un **símbolo dibujado** en cada post-it y cambie las reglas
 del recorrido automático del cubo azul.
 
-**Lo que pediste**
 - Post-it con **corona** = meta: si el cubo llega ahí, el camino termina.
 - Post-it con **flecha hacia arriba** = el cubo puede saltar mucho más y alcanzar
   bloques que antes eran inalcanzables.
-- Usar un modelo tipo YOLO, como en el Taller 2 (elegiste la opción A:
-  detector de color actual + clasificador YOLO11n-cls sobre el recorte).
-- Una carpeta nueva con todos los cambios, dejando fuera lo que estorba.
-
-**Lo que asumí (no lo corregiste)**
+- Usar un modelo tipo YOLO
 - Al aterrizar sobre la corona se muestra "¡META!" y el cubo se queda ahí; `R` reinicia.
 - El cubo nunca parte sobre una corona.
 - La flecha funciona como **trampolín**: todo salto que *sale* de ese post-it usa la
   física fuerte. Es de un solo sentido (volver depende del post-it de destino).
 - Un post-it `otro` (X, garabato, flecha abajo o de lado) es una plataforma normal.
 - Se mantienen las reglas actuales: < 2 post-its sin cubo, 2 quieto, ≥ 3 automático,
-  saltos solo entre vecinos en orden izquierda→derecha.
-
+  saltos solo entre vecinos en orden izquierda->derecha.
+  
 **Criterio de éxito**
 1. Con el modelo entrenado, una corona y una flecha bien dibujadas se reconocen en
    vivo y el cubo cumple las reglas.
@@ -32,8 +27,6 @@ del recorrido automático del cubo azul.
 3. El banco de desafíos actual sigue en **8/9** (hoy falla solo "manga blanca").
 
 ## 2. Reorganización de carpetas
-
-Nada se borra. Lo antiguo se mueve a una carpeta aparte; lo nuevo vive en `proyecto_v3/`.
 
 ```
 Proyecto_actualizado/
@@ -43,7 +36,7 @@ Proyecto_actualizado/
 │   ├── entrenar_simbolos.py      NUEVO: arma train/val/test y entrena
 │   ├── desafios.py               copia de v2 + desafíos de reglas y símbolos
 │   ├── README.md                 cómo jugar, capturar y entrenar
-│   ├── modelos/                  yolo11n-cls.pt (copiado del Taller 2) y simbolos.pt (tras entrenar)
+│   ├── modelos/                  yolo11n-cls.pt y simbolos.pt
 │   ├── dataset/                  MOVIDA desde la raíz (+ sin_clasificar/)
 │   ├── dataset_prueba/           MOVIDA desde la raíz
 │   ├── desafios/                 COPIA (videos + pizarra_base.jpg)
