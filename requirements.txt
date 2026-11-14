@@ -1,0 +1,8 @@
+# Instalar PyTorch con CUDA ANTES (si hay GPU NVIDIA), si no se instala la versión solo-CPU:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+# Luego:
+#   pip install -r requirements.txt
+opencv-python>=4.10
+pygame>=2.5
+numpy>=1.26
+ultralytics>=8.4

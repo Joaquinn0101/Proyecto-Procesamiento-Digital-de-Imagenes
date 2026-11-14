@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+
+# Resultados de entrenamiento de Ultralytics (si se corre dentro del proyecto)
+runs/
+*.cache
+
+# Modelo base: Ultralytics lo descarga solo la primera vez que se entrena
+modelos/yolo11n-cls.pt
+# (modelos/simbolos.pt SÍ se sube: es el modelo entrenado que usa el juego)
+
+# Dataset: se suben los recortes ya clasificados (dataset/<clase>/, dataset_prueba/<clase>/)
+dataset/sin_clasificar/*
+!dataset/sin_clasificar/.gitkeep
+dataset/_*/
+dataset/Imágenes/
+
+# Copias locales para Roboflow (se rehacen; ver docs/agregar_imagenes.md)
+subir_roboflow/
+roboflow_export/
+*.zip
+
+# Videos: los de desafíos se regeneran con `python desafios.py --guardar`;
+# las grabaciones (tecla G) son personales
+desafios/*.mp4
+grabaciones/*
+!grabaciones/.gitkeep
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
