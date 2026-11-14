@@ -18,9 +18,6 @@ Grupo = '<sesion>_p<id>' del nombre que pone la tecla S: todos los recortes del
 mismo post-it en una sesión. Un grupo nunca queda repartido entre train y val;
 si no, val tendría casi las mismas fotos que train y la exactitud se inflaría
 (lo que se vio en el Taller 2 con los mismos objetos en train y test).
-
-Entrena FUERA de OneDrive (en el Taller 2 OneDrive dio PermissionError al guardar
-last.pt) y al final copia best.pt a modelos/simbolos.pt, que el juego carga solo.
 """
 import argparse
 import math
