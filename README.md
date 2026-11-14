@@ -8,11 +8,11 @@ dibuja en cada post-it cambia las reglas del juego:
 
 | Dibujo en el post-it | Efecto |
 |---|---|
-| 👑 **Corona** | **Meta.** Si el cubo llega ahí, aparece **¡META!** y el camino termina. |
-| ⬆️ **Flecha hacia arriba** | **Trampolín.** Desde ahí el cubo sube ~300 px y salta ~410 px, unas 3 veces un salto normal. |
+| **Corona** | **Meta.** Si el cubo llega ahí, aparece **¡META!** y el camino termina. |
+| **Flecha hacia arriba** | **Trampolín.** Desde ahí el cubo sube ~300 px y salta ~410 px, unas 3 veces un salto normal. |
 | Vacío o cualquier otro dibujo | Plataforma normal. |
 
-> 🎥 **Video de demostración:** _(agregar enlace)_
+>  **Video de demostración:** _(agregar enlace)_
 
 <!-- Agregar aquí una captura o GIF del juego: ![demo](docs/demo.gif) -->
 
