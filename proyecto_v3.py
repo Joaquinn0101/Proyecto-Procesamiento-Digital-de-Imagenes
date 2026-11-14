@@ -69,6 +69,7 @@ import simbolos
 # CONFIGURACIÓN
 # ============================================================
 ANCHO, ALTO = 800, 600
+FUENTE_CAMARA = 0
 
 # --- Detección de color (Lab, valores 0-255 de OpenCV; 128 = neutro) ---
 DELTA_B = 15      # cuánto más "amarillo" (b*) que la escena debe ser un píxel
